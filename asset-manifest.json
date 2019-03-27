@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.73d4e1cd.chunk.css",
-  "main.js": "/static/js/main.6696b38e.chunk.js",
-  "main.js.map": "/static/js/main.6696b38e.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.c5541365.js",
-  "runtime~main.js.map": "/static/js/runtime~main.c5541365.js.map",
-  "static/js/2.1b58a2ad.chunk.js": "/static/js/2.1b58a2ad.chunk.js",
-  "static/js/2.1b58a2ad.chunk.js.map": "/static/js/2.1b58a2ad.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.959dd89c59d28ecda515d83c56fad621.js": "/precache-manifest.959dd89c59d28ecda515d83c56fad621.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.73d4e1cd.chunk.css.map": "/static/css/main.73d4e1cd.chunk.css.map",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+  "main.css": "/thaidev/static/css/main.73d4e1cd.chunk.css",
+  "main.js": "/thaidev/static/js/main.9674c9fb.chunk.js",
+  "main.js.map": "/thaidev/static/js/main.9674c9fb.chunk.js.map",
+  "runtime~main.js": "/thaidev/static/js/runtime~main.933adfda.js",
+  "runtime~main.js.map": "/thaidev/static/js/runtime~main.933adfda.js.map",
+  "static/js/2.1b58a2ad.chunk.js": "/thaidev/static/js/2.1b58a2ad.chunk.js",
+  "static/js/2.1b58a2ad.chunk.js.map": "/thaidev/static/js/2.1b58a2ad.chunk.js.map",
+  "index.html": "/thaidev/index.html",
+  "precache-manifest.62f32b1c68ebe82671ff423c02435d28.js": "/thaidev/precache-manifest.62f32b1c68ebe82671ff423c02435d28.js",
+  "service-worker.js": "/thaidev/service-worker.js",
+  "static/css/main.73d4e1cd.chunk.css.map": "/thaidev/static/css/main.73d4e1cd.chunk.css.map",
+  "static/media/logo.svg": "/thaidev/static/media/logo.5d5d9eef.svg"
 }
