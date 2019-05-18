@@ -1,1 +1,50 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"> <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>Bán hàng</title><link href="/static/css/main.16d08395.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.27&libraries=places,geometry&key=AIzaSyADuVeRTxPUW3YMzKfmU5h8FnTA--eO5Sk"></script><script type="text/javascript" src="https://apis.google.com/js/client:platform.js"></script><script type="text/javascript" src="/static/js/main.a31fb006.js"></script></body></html>
+
+<html>
+  <script type="text/javascript" src="https://www.2checkout.com/checkout/api/2co.min.js"></script>
+  <script type="text/javascript">
+    var args = {
+      sellerId: "250156307486",
+      publishableKey: "B1CA7B45-0B26-42B4-BA38-4E4C132A8C51",
+      ccNo: '4242424242424242',
+      cvv: '123',
+      expMonth: '10',
+      expYear: '2022'
+    };
+    const success = (token) => postMessage("Messga token from webView" + token);
+    const errorCallback = error => postMessage("Messga error from webView" + error);
+
+const postMessage = (message) => {
+if (window.postMessage.length !== 1){
+   setTimeout(waitForBridge, 200);
+ }
+ else {
+   window.postMessage(message);
+ }
+}
+function waitForBridge() {
+
+//the react native postMessage has only 1 parameter
+//while the default one has 2, so check the signature
+//of the function
+
+TCO.requestToken(success, errorCallback, args);
+}
+
+
+
+window.onload = waitForBridge;
+
+const doSomeThing = () => window.postMessage('abc1');
+
+   
+
+    
+
+    // Make the token request
+    // 
+    // alert('a');
+  </script>
+  <body>
+      abc
+    </body>
+</html>
