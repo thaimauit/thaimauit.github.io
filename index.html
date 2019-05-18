@@ -3,17 +3,18 @@
   <script type="text/javascript" src="https://www.2checkout.com/checkout/api/2co.min.js"></script>
   <script type="text/javascript">
     var args = {
-      sellerId: "250156307486",
-      publishableKey: "B1CA7B45-0B26-42B4-BA38-4E4C132A8C51",
-      ccNo: '4242424242424242',
-      cvv: '123',
-      expMonth: '10',
-      expYear: '2022'
+      sellerId: "901407564",
+        publishableKey: "F9A7AA66-3062-499A-84BB-C83C8A32F3D1",
+        ccNo: '4000000000000002',
+        cvv: '123',
+        expMonth: '10',
+        expYear: '2022'
     };
-    const success = (token) => postMessage("Messga token from webView" + token);
-    const errorCallback = error => postMessage("Messga error from webView" + error);
+    const success = (token) => {console.log(token); postMessage(JSON.stringify({error: false, token}))};
+    const errorCallback = error => { console.log(error); postMessage(JSON.stringify({error: true,})) };
 
 const postMessage = (message) => {
+  console.log(message);
 if (window.postMessage.length !== 1){
    setTimeout(waitForBridge, 200);
  }
@@ -27,7 +28,12 @@ function waitForBridge() {
 //while the default one has 2, so check the signature
 //of the function
 
+TCO.loadPubKey('sandbox', function() { 
+// Execute when Public Key is available 
 TCO.requestToken(success, errorCallback, args);
+});
+
+
 }
 
 
